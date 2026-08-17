@@ -1,22 +1,26 @@
-import { capacityWithRequestNote } from "@/lib/site-config";
+import { siteConfig, capacityWithRequestNote } from "@/lib/site-config";
 import { CheckIcon } from "./icons";
 
 const points = [
   {
-    title: "אמינות ודייקנות",
-    description: "הגעה בזמן לאיסוף, כך שתגיעו לטיסה בלי לחץ ובלי עיכובים.",
+    title: "נסיעה מיידית",
+    description: "מזמינים ומקבלים מונית בהקדם האפשרי, לכל יעד בחיפה ובצפון — ללא צורך בהזמנה מראש.",
   },
   {
-    title: "התחשבות בשעת הטיסה",
-    description: "שעת האיסוף מתואמת מראש בהתאם לשעת הטיסה שלכם, יעד הטיסה ועומסי הדרכים.",
+    title: "אמינות ודייקנות",
+    description: "הגעה בזמן לאיסוף, בין אם מדובר בנסיעה מיידית ובין אם בהזמנה מתוכננת מראש.",
   },
   {
     title: "רכב נוח ומרווח",
     description: `מקום נוח ${capacityWithRequestNote}, עם מקום למזוודות ולציוד טיסה.`,
   },
   {
+    title: "גם הזמנה מראש לשדה התעופה",
+    description: `אפשר לתאם מראש נסיעה ל${siteConfig.bengurionAirport} או ל${siteConfig.haifaAirport}, בהתאם לשעת הטיסה שלכם.`,
+  },
+  {
     title: "זמינות בכל שעה",
-    description: "טיסות בוקר מוקדם, לילה מאוחר או חג — אנחנו זמינים 24/7.",
+    description: "בוקר מוקדם, לילה מאוחר או סוף שבוע — אנחנו זמינים 24/7.",
   },
 ];
 
@@ -27,7 +31,7 @@ export function WhyUs() {
         <h2 className="text-2xl font-extrabold text-brand-black sm:text-3xl">למה לבחור בנו</h2>
       </div>
 
-      <div className="mt-10 grid gap-6 sm:grid-cols-2">
+      <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {points.map((point) => (
           <div key={point.title} className="flex gap-4 rounded-2xl bg-brand-gray p-5">
             <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-brand-yellow text-brand-black">

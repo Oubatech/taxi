@@ -8,7 +8,8 @@ export function CoverageArea() {
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-2xl font-extrabold sm:text-3xl">אזורי שירות: חיפה והצפון</h2>
           <p className="mt-3 text-neutral-300">
-            אנחנו מגיעים לאיסוף מכל אזור חיפה והצפון, ומסיעים ישירות לשדה התעופה בן גוריון וממנו.
+            אנחנו מגיעים לאיסוף מיידי מכל אזור חיפה והצפון, ומציעים גם הזמנה
+            מראש לשדה התעופה בן גוריון ולשדה התעופה חיפה.
           </p>
         </div>
 

@@ -4,13 +4,16 @@
 
 export const siteConfig = {
   businessName: "מלך המוניות",
-  tagline: "מונית לשדה התעופה מחיפה והצפון",
+  tagline: "מונית מיידית בחיפה ובצפון",
   phoneDisplay: "054-277-6251",
   phoneTel: "+972542776251", // used for tel: links
   whatsappNumber: "972542776251", // used for wa.me links (no leading 0, no +)
   siteUrl: "https://example.co.il", // TODO: replace with real domain before going live
-  defaultWhatsappMessage:
-    "שלום, אני מעוניין/ת להזמין מונית לשדה התעופה",
+  defaultWhatsappMessage: "שלום, אני מעוניין/ת להזמין מונית",
+  // Primary service: immediate/on-demand rides anywhere in Haifa & the North.
+  // Secondary (lower-priority, advance-booking) service: airport transfers.
+  bengurionAirport: "נתב\"ג (שדה התעופה בן גוריון)",
+  haifaAirport: "שדה התעופה חיפה (חוף הכרמל)",
   areasServed: [
     "חיפה",
     "עכו",

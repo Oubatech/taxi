@@ -1,3 +1,4 @@
+import { AvailabilityBanner } from "@/components/availability-banner";
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 import { Services } from "@/components/services";
@@ -11,6 +12,7 @@ import { StickyMobileCTA } from "@/components/sticky-mobile-cta";
 export default function Home() {
   return (
     <>
+      <AvailabilityBanner />
       <Header />
       <main className="flex-1">
         <Hero />

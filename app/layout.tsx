@@ -9,8 +9,8 @@ const rubik = Rubik({
   weight: ["400", "500", "600", "700", "800"],
 });
 
-const title = `${siteConfig.businessName} | מונית לשדה התעופה מחיפה והצפון`;
-const description = `הזמנת מונית לשדה התעופה בן גוריון מחיפה, עכו, נהריה, הקריות וכל אזור הצפון. רכב נוח ${capacityWithRequestNote}, זמינות 24/7, הזמנה מראש או בהתראה קצרה. הזמינו עכשיו בטלפון או בווטסאפ.`;
+const title = `${siteConfig.businessName} | מונית מיידית בחיפה ובצפון`;
+const description = `הזמנת מונית מיידית לכל יעד בחיפה, עכו, נהריה, הקריות וכל אזור הצפון. ניתן גם להזמין מראש נסיעה ל${siteConfig.bengurionAirport} ול${siteConfig.haifaAirport}. רכב נוח ${capacityWithRequestNote}, זמינות 24/7. הזמינו עכשיו בטלפון או בווטסאפ.`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
@@ -20,11 +20,13 @@ export const metadata: Metadata = {
   },
   description,
   keywords: [
+    "מונית מיידית בחיפה",
+    "מונית עכשיו בצפון",
+    "מוניות חיפה",
     "מונית לשדה התעופה מחיפה",
     "מונית לנתבג מהצפון",
-    "מוניות חיפה",
-    "מונית לשדה התעופה עכו",
-    "מונית לשדה התעופה נהריה",
+    "מונית לשדה התעופה חיפה",
+    "מונית חוף הכרמל",
     "הזמנת מונית לנתבג",
     `מונית ${siteConfig.maxPassengers} נוסעים`,
     "מוניות צפון",

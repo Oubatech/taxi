@@ -3,9 +3,9 @@ import { CallButton, WhatsAppButton } from "./cta-buttons";
 import { CheckIcon } from "./icons";
 
 const badges = [
-  `${capacityWithRequestNote} ברכב אחד`,
-  "זמינות 24/7, כל ימות השנה",
-  "הזמנה מראש או בהתראה קצרה",
+  "נסיעה מיידית, זמינים 24/7 בכל שעה",
+  `רכב שמתאים לצרכים שלכם, עד ${siteConfig.maxPassengers} נוסעים`,
+  "גם הזמנה מראש לשדה התעופה",
 ];
 
 export function Hero() {
@@ -17,14 +17,14 @@ export function Hero() {
             {siteConfig.businessName} · חיפה והצפון
           </p>
           <h1 className="text-3xl font-extrabold leading-tight text-brand-black sm:text-4xl md:text-5xl">
-            מונית לשדה התעופה בן גוריון
+            מונית מיידית בכל שעה
             <br />
-            מחיפה, עכו, נהריה והצפון
+            בחיפה ובצפון
           </h1>
           <p className="mt-4 text-lg text-neutral-700">
-            הסעה נוחה ובטוחה לשדה התעופה ובחזרה, ברכב המתאים לבקשה שלכם —{" "}
-            {capacityWithRequestNote}. הזמינו בטלפון או בווטסאפ וקבלו מענה
-            מהיר.
+            מתקשרים ומקבלים רכב בהקדם האפשרי לכל יעד בחיפה, עכו, נהריה, הקריות
+            וכל אזור הצפון, ברכב המתאים לבקשה שלכם — {capacityWithRequestNote}.
+            מציעים גם הזמנת מונית מראש לשדה התעופה בן גוריון ולשדה התעופה חיפה.
           </p>
 
           <div className="mt-7 flex flex-col gap-3 sm:flex-row">
