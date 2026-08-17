@@ -5,9 +5,9 @@
 export const siteConfig = {
   businessName: "מלך המוניות",
   tagline: "מונית לשדה התעופה מחיפה והצפון",
-  phoneDisplay: "052-123-1234",
-  phoneTel: "+972521231234", // used for tel: links
-  whatsappNumber: "972521231234", // used for wa.me links (no leading 0, no +)
+  phoneDisplay: "054-277-6251",
+  phoneTel: "+972542776251", // used for tel: links
+  whatsappNumber: "972542776251", // used for wa.me links (no leading 0, no +)
   siteUrl: "https://example.co.il", // TODO: replace with real domain before going live
   defaultWhatsappMessage:
     "שלום, אני מעוניין/ת להזמין מונית לשדה התעופה",
