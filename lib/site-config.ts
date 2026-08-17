@@ -1,6 +1,10 @@
 // Central place for all business details.
-// UPDATE siteUrl once a real domain is purchased — it feeds canonical URLs,
-// the sitemap, and structured data.
+
+// Read from the NEXT_PUBLIC_SITE_URL env var (set in Vercel → Project →
+// Settings → Environment Variables) at build time, since this is a static
+// export with no server to read env vars at request time. Falls back to the
+// real production domain if the env var isn't set.
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://htaxi.online";
 
 export const siteConfig = {
   businessName: "מלך המוניות",
@@ -8,7 +12,7 @@ export const siteConfig = {
   phoneDisplay: "054-277-6251",
   phoneTel: "+972542776251", // used for tel: links
   whatsappNumber: "972542776251", // used for wa.me links (no leading 0, no +)
-  siteUrl: "https://example.co.il", // TODO: replace with real domain before going live
+  siteUrl,
   defaultWhatsappMessage: "שלום, אני מעוניין/ת להזמין מונית",
   // Primary service: immediate/on-demand rides anywhere in Haifa & the North.
   // Secondary (lower-priority, advance-booking) service: airport transfers.
