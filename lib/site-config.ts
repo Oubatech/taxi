@@ -1,10 +1,11 @@
 // Central place for all business details.
 
-// Read from the NEXT_PUBLIC_SITE_URL env var (set in Vercel → Project →
-// Settings → Environment Variables) at build time, since this is a static
-// export with no server to read env vars at request time. Falls back to the
-// real production domain if the env var isn't set.
+// Read from env vars (set in Vercel → Project → Settings → Environment
+// Variables) at build time, since this is a static export with no server to
+// read env vars at request time. Both fall back to real values if unset.
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://htaxi.online";
+const gaMeasurementId =
+  process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-CQK9ZLGCV0";
 
 export const siteConfig = {
   businessName: "מלך המוניות",
@@ -13,6 +14,7 @@ export const siteConfig = {
   phoneTel: "+972542776251", // used for tel: links
   whatsappNumber: "972542776251", // used for wa.me links (no leading 0, no +)
   siteUrl,
+  gaMeasurementId,
   defaultWhatsappMessage: "שלום, אני מעוניין/ת להזמין מונית",
   // Primary service: immediate/on-demand rides anywhere in Haifa & the North.
   // Secondary (lower-priority, advance-booking) service: airport transfers.

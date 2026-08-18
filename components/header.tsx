@@ -1,4 +1,7 @@
+"use client";
+
 import { siteConfig, telHref, whatsappHref } from "@/lib/site-config";
+import { trackContactClick } from "@/lib/analytics";
 import { PhoneIcon, WhatsAppIcon } from "./icons";
 
 const navLinks = [
@@ -32,6 +35,7 @@ export function Header() {
             href={whatsappHref}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackContactClick("whatsapp")}
             className="flex size-10 items-center justify-center rounded-full bg-[#25D366] text-white shadow transition hover:opacity-90"
             aria-label="הזמנה בווטסאפ"
           >
@@ -39,6 +43,7 @@ export function Header() {
           </a>
           <a
             href={telHref}
+            onClick={() => trackContactClick("call")}
             className="hidden items-center gap-2 rounded-full bg-brand-black px-4 py-2.5 text-sm font-bold text-white shadow transition hover:opacity-90 sm:flex"
             aria-label={`התקשרו עכשיו למספר ${siteConfig.phoneDisplay}`}
           >

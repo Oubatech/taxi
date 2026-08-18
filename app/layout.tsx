@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
 import "./globals.css";
 import { siteConfig, capacityWithRequestNote } from "@/lib/site-config";
+import { GoogleAnalytics } from "@/components/google-analytics";
 
 const rubik = Rubik({
   variable: "--font-rubik",
@@ -92,6 +93,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${rubik.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans">
+        <GoogleAnalytics measurementId={siteConfig.gaMeasurementId} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
